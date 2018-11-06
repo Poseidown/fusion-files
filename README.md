@@ -49,4 +49,8 @@ If you enjoy using this and would like to support development of this and other 
 
 **x32 and x64 Binaries**
 
+[![32bitDL](https://i.imgur.com/3yUeoXq.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J8ZS6X9PEZD7L)
+
+[![64bitDL](https://i.imgur.com/W75PR00.png)](https://github.com/Poseidown/fusion-files/blob/master/GUI-FusionFile_x64_master/bin/FusionFiles1.5_x64.exe)
+
 [![paypal](https://i.imgur.com/IO4eM32.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J8ZS6X9PEZD7L)
