@@ -12,9 +12,11 @@ Usage of all tools on this site for attacking targets without prior mutual conse
 - The Legitimate File and Payload File will be hidden inside an executeable that extracts both and drops them to one of three locations of your choice: TEMP, APPDATA, or User's Home Folder.
 - You can optionally set the icon for the executeable and version file (assembly information). Examples provided in the resources folder.
 
-### **Output Scantime Detection:** FUD
+### **Output Scantime Detection:** 
+FUD
 
-### **Output Runtime Detection:** Depends on the files being executed. This can vary. If it was detected by 32 AVs before, it will probably be detected shortly after execution.
+### **Output Runtime Detection:** 
+Depends on the files being executed. This can vary. If it was detected by 32 AVs before, it will probably be detected shortly after execution.
 
 ### **Resources:**
 - icon_examples: test icons provided
