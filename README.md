@@ -12,6 +12,11 @@ Usage of all tools on this site for attacking targets without prior mutual conse
 
 **Runtime Detection:** Depends on the files being executed. This can vary. If it was detected by 32 AVs before, it will probably be detected shortly after execution.
 
+**Resources:**
+- icon_examples: test icons provided
+- version_example: test version file provided
+- example config file
+
 **Prerequisites to run from Source:**
 - Windows 7+
 - Python 2.7
