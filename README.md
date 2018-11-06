@@ -1,5 +1,5 @@
 # fusion-files
-**Penetration Testing File Binder and Dropper**
+**Penetration Testing: File Binder and Encrypted Dropper**
 
 **DISCLAIMER:**
 
