@@ -8,6 +8,10 @@ Usage of all tools on this site for attacking targets without prior mutual conse
 
 ![binaryDL](https://i.imgur.com/wFJh7WL.png)
 
+**Scantime Detection:** FUD
+
+**Runtime Detection:** Depends on the files being executed. This can vary. If it was detected by 32 AVs before, it will probably be detected shortly after execution.
+
 **Prerequisites to run from Source:**
 - Windows 7+
 - Python 2.7
