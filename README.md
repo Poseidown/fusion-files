@@ -48,7 +48,7 @@ Questions or Suggestions? Email: RealPoseidOwn@mail.com
 
 If you enjoy using this and would like to support development of this and other open source penetration testing software, consider donating!
 
-**x32 and x64 Binaries**
+**x32 and x64 Binaries** ***Pyinstaller must be installed! - pip install pyinstaller
 
 [![32bitDL](https://i.imgur.com/3yUeoXq.png)](https://github.com/Poseidown/fusion-files/raw/master/GUI-FusionFile_x64_master/bin/FusionFiles1.5_x86.exe)
 
