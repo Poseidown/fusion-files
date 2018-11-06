@@ -41,7 +41,8 @@ Usage of all tools on this site for attacking targets without prior mutual conse
   
 **HOW TO RUN FROM SOURCE**
 - Follow all of the steps from Prerequisites to run from Source. Then Navigate to the Main.py and you should be able to execute it through your favorite editor or at the command line by simply typing:
-  -python Main.py
+  
+  - python Main.py
 
 Questions or Suggestions? Email: RealPoseidOwn@mail.com
 
