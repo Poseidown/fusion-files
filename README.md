@@ -50,7 +50,8 @@ If you enjoy using this and would like to support development of this and other 
 
 ### **x32 and x64 Binaries** 
 
-***Pyinstaller must be installed! - pip install pyinstaller
+***Pyinstaller must be installed! 
+- pip install pyinstaller
 
 [![32bitDL](https://i.imgur.com/3yUeoXq.png)](https://github.com/Poseidown/fusion-files/raw/master/GUI-FusionFile_x64_master/bin/FusionFiles1.5_x86.exe)
 
