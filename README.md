@@ -9,7 +9,7 @@ Usage of all tools on this site for attacking targets without prior mutual conse
 ![binaryDL](https://i.imgur.com/wFJh7WL.png)
 
 **Fusion Files**
-- The Legitimate File and Payload File will be hidden inside an executeable that extracts both and drops them to one of three locations of your choice. The TEMP, APPDATA, or User's Home Folder.
+- The Legitimate File and Payload File will be hidden inside an executeable that extracts both and drops them to one of three locations of your choice: TEMP, APPDATA, or User's Home Folder.
 - You can optionally set the icon for the executeable and version file (assembly information). Examples provided in the resources folder.
 
 **Output Scantime Detection:** FUD
