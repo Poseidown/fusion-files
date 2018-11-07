@@ -13,11 +13,10 @@ Usage of all tools on this site for attacking targets without prior mutual conse
 - You can optionally set the icon for the executeable and version file (assembly information). Examples provided in the resources folder.
 
 ### **Output Scantime Detection:** 
-FUD
+FUD with encrypt option checked.
 
 ### **Output Runtime Detection:** 
-Depends on the files being executed. This can vary. If it was detected by 32 AVs before, it will probably be detected shortly after execution.
-
+If the Payload was detected prior to binding the files, it will be detected at run time.
 ### **Resources:**
 - icon_examples: test icons provided
 - version_example: test version file provided
