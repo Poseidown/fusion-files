@@ -46,7 +46,7 @@ Depends on the files being executed. This can vary. If it was detected by 32 AVs
   
   - python Main.py
 
-Questions or Suggestions? Email: RealPoseidOwn@mail.com
+Questions or Suggestions? Email: lycosidae024@gmail.com
 
 If you enjoy using this and would like to support development of this and other open source penetration testing software, consider donating!
 
