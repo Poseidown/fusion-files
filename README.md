@@ -6,7 +6,7 @@
 **All information and software available in this repository is for educational purposes only. Use these at your own discretion, I cannot be held responsible for any damages caused.
 Usage of all tools in this repository for attacking targets without prior mutual consent is illegal. It is the end user’s responsibility to obey all applicable local, state and federal laws. I assume no liability and am not responsible for any misuse or damage caused by this project.**
 
-![binaryDL](https://i.imgur.com/wFJh7WL.png)
+![binaryDL](https://imgur.com/a/Dm5rUrm)
 
 ### **Fusion Files**
 - The Legitimate File and Payload File will be hidden inside an executeable that extracts both and drops them to one of three locations of your choice: TEMP, APPDATA, or User's Home Folder.
