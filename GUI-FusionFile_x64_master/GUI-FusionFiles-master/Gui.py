@@ -17,7 +17,7 @@ import wx.xrc
 class MainFrame ( wx.Frame ):
 
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Fusion Files", pos = wx.DefaultPosition, size = wx.Size( 600,675 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Fusion Files", pos = wx.DefaultPosition, size = wx.Size( 600,800 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
 		self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 		self.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_HIGHLIGHTTEXT ) )
@@ -201,6 +201,45 @@ class MainFrame ( wx.Frame ):
 		bSizer24 = wx.BoxSizer( wx.VERTICAL )
 
 		bSizer24.SetMinSize( wx.Size( -1,150 ) )
+		bSizer12 = wx.BoxSizer( wx.HORIZONTAL )
+
+		self.lblAdditionalOptions = wx.StaticText( self, wx.ID_ANY, u"Additional Options:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.lblAdditionalOptions.Wrap( -1 )
+
+		self.lblAdditionalOptions.SetFont( wx.Font( 9, wx.FONTFAMILY_SWISS, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, "Arial" ) )
+		self.lblAdditionalOptions.SetForegroundColour( wx.Colour( 0, 255, 0 ) )
+
+		bSizer12.Add( self.lblAdditionalOptions, 0, wx.ALL, 5 )
+
+		self.chkAntiVM = wx.CheckBox( self, wx.ID_ANY, u"Anti VM", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.chkAntiVM.SetForegroundColour( wx.Colour( 0, 255, 0 ) )
+
+		bSizer12.Add( self.chkAntiVM, 0, wx.ALL, 5 )
+
+
+		bSizer12.Add( ( 0, 0), 1, wx.EXPAND, 5 )
+
+		self.chkDelay = wx.CheckBox( self, wx.ID_ANY, u"Delay", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.chkDelay.SetForegroundColour( wx.Colour( 0, 255, 0 ) )
+
+		bSizer12.Add( self.chkDelay, 0, wx.ALL, 5 )
+
+		self.txtDelaySeconds = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size( 40,-1 ), 0 )
+		bSizer12.Add( self.txtDelaySeconds, 0, wx.ALL, 5 )
+
+		self.lblDelaySeconds = wx.StaticText( self, wx.ID_ANY, u"Seconds", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.lblDelaySeconds.Wrap( -1 )
+
+		self.lblDelaySeconds.SetForegroundColour( wx.Colour( 0, 255, 0 ) )
+
+		bSizer12.Add( self.lblDelaySeconds, 0, wx.ALL, 5 )
+
+
+		bSizer12.Add( ( 0, 0), 1, wx.EXPAND, 5 )
+
+
+		bSizer24.Add( bSizer12, 1, wx.EXPAND, 5 )
+
 		bSizer141 = wx.BoxSizer( wx.HORIZONTAL )
 
 		self.OutFileLabel = wx.StaticText( self, wx.ID_ANY, u"Output File Name:", wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTER_HORIZONTAL )
